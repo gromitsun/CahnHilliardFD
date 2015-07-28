@@ -8,23 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		8A3AEBB71B67CFB000B75949 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AEBB61B67CFB000B75949 /* main.cpp */; };
+		8A3AEBC81B67D15200B75949 /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AEBBE1B67D15200B75949 /* input.cpp */; };
+		8A3AEBC91B67D15200B75949 /* kernel_float_2d.cl in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AEBC11B67D15200B75949 /* kernel_float_2d.cl */; };
+		8A3AEBCA1B67D15200B75949 /* kernel_float_3d.cl in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AEBC21B67D15200B75949 /* kernel_float_3d.cl */; };
+		8A3AEBCC1B67D15200B75949 /* simulator_2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AEBC41B67D15200B75949 /* simulator_2d.cpp */; };
+		8A3AEBCD1B67D15200B75949 /* simulator_3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AEBC61B67D15200B75949 /* simulator_3d.cpp */; };
+		8A3AEBE01B67DD7F00B75949 /* cl_common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AEBD01B67DD7F00B75949 /* cl_common.cpp */; };
+		8A3AEBE41B67DD7F00B75949 /* randn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AEBD91B67DD7F00B75949 /* randn.cpp */; };
+		8A3AEBE61B67DD7F00B75949 /* simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AEBDC1B67DD7F00B75949 /* simulator.cpp */; };
+		8A3AEBE71B67DD7F00B75949 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AEBDE1B67DD7F00B75949 /* util.cpp */; };
+		8A3AEBE81B67DE4F00B75949 /* kernel_float_2d.cl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A3AEBC11B67D15200B75949 /* kernel_float_2d.cl */; };
+		8A3AEBE91B67DE4F00B75949 /* kernel_float_3d.cl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A3AEBC21B67D15200B75949 /* kernel_float_3d.cl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		8A3AEBB11B67CFB000B75949 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
 			files = (
+				8A3AEBE81B67DE4F00B75949 /* kernel_float_2d.cl in CopyFiles */,
+				8A3AEBE91B67DE4F00B75949 /* kernel_float_3d.cl in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8A3AEBB31B67CFB000B75949 /* CahnHilliardFD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CahnHilliardFD; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3AEBB61B67CFB000B75949 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8A3AEBBE1B67D15200B75949 /* input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = input.cpp; sourceTree = "<group>"; };
+		8A3AEBBF1B67D15200B75949 /* input.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = input.hpp; sourceTree = "<group>"; };
+		8A3AEBC11B67D15200B75949 /* kernel_float_2d.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = kernel_float_2d.cl; sourceTree = "<group>"; };
+		8A3AEBC21B67D15200B75949 /* kernel_float_3d.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = kernel_float_3d.cl; sourceTree = "<group>"; };
+		8A3AEBC41B67D15200B75949 /* simulator_2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simulator_2d.cpp; sourceTree = "<group>"; };
+		8A3AEBC51B67D15200B75949 /* simulator_2d.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = simulator_2d.hpp; sourceTree = "<group>"; };
+		8A3AEBC61B67D15200B75949 /* simulator_3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simulator_3d.cpp; sourceTree = "<group>"; };
+		8A3AEBC71B67D15200B75949 /* simulator_3d.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = simulator_3d.hpp; sourceTree = "<group>"; };
+		8A3AEBD01B67DD7F00B75949 /* cl_common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cl_common.cpp; sourceTree = "<group>"; };
+		8A3AEBD11B67DD7F00B75949 /* cl_common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cl_common.hpp; sourceTree = "<group>"; };
+		8A3AEBD91B67DD7F00B75949 /* randn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = randn.cpp; sourceTree = "<group>"; };
+		8A3AEBDA1B67DD7F00B75949 /* randn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = randn.hpp; sourceTree = "<group>"; };
+		8A3AEBDC1B67DD7F00B75949 /* simulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simulator.cpp; sourceTree = "<group>"; };
+		8A3AEBDD1B67DD7F00B75949 /* simulator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = simulator.hpp; sourceTree = "<group>"; };
+		8A3AEBDE1B67DD7F00B75949 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		8A3AEBDF1B67DD7F00B75949 /* util.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = util.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				8A3AEBB51B67CFB000B75949 /* CahnHilliardFD */,
+				8A3AEBCE1B67DD7F00B75949 /* cl_common */,
+				8A3AEBD51B67DD7F00B75949 /* sim_common */,
 				8A3AEBB41B67CFB000B75949 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,10 +88,48 @@
 		8A3AEBB51B67CFB000B75949 /* CahnHilliardFD */ = {
 			isa = PBXGroup;
 			children = (
+				8A3AEBBE1B67D15200B75949 /* input.cpp */,
+				8A3AEBBF1B67D15200B75949 /* input.hpp */,
+				8A3AEBC01B67D15200B75949 /* kernels */,
+				8A3AEBC41B67D15200B75949 /* simulator_2d.cpp */,
+				8A3AEBC51B67D15200B75949 /* simulator_2d.hpp */,
+				8A3AEBC61B67D15200B75949 /* simulator_3d.cpp */,
+				8A3AEBC71B67D15200B75949 /* simulator_3d.hpp */,
 				8A3AEBB61B67CFB000B75949 /* main.cpp */,
 			);
 			path = CahnHilliardFD;
 			sourceTree = "<group>";
+		};
+		8A3AEBC01B67D15200B75949 /* kernels */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AEBC11B67D15200B75949 /* kernel_float_2d.cl */,
+				8A3AEBC21B67D15200B75949 /* kernel_float_3d.cl */,
+			);
+			path = kernels;
+			sourceTree = "<group>";
+		};
+		8A3AEBCE1B67DD7F00B75949 /* cl_common */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AEBD01B67DD7F00B75949 /* cl_common.cpp */,
+				8A3AEBD11B67DD7F00B75949 /* cl_common.hpp */,
+			);
+			path = cl_common;
+			sourceTree = SOURCE_ROOT;
+		};
+		8A3AEBD51B67DD7F00B75949 /* sim_common */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AEBD91B67DD7F00B75949 /* randn.cpp */,
+				8A3AEBDA1B67DD7F00B75949 /* randn.hpp */,
+				8A3AEBDC1B67DD7F00B75949 /* simulator.cpp */,
+				8A3AEBDD1B67DD7F00B75949 /* simulator.hpp */,
+				8A3AEBDE1B67DD7F00B75949 /* util.cpp */,
+				8A3AEBDF1B67DD7F00B75949 /* util.hpp */,
+			);
+			path = sim_common;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -118,7 +187,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A3AEBE41B67DD7F00B75949 /* randn.cpp in Sources */,
+				8A3AEBC81B67D15200B75949 /* input.cpp in Sources */,
+				8A3AEBCC1B67D15200B75949 /* simulator_2d.cpp in Sources */,
+				8A3AEBE71B67DD7F00B75949 /* util.cpp in Sources */,
+				8A3AEBE61B67DD7F00B75949 /* simulator.cpp in Sources */,
+				8A3AEBCD1B67D15200B75949 /* simulator_3d.cpp in Sources */,
+				8A3AEBC91B67D15200B75949 /* kernel_float_2d.cl in Sources */,
+				8A3AEBE01B67DD7F00B75949 /* cl_common.cpp in Sources */,
 				8A3AEBB71B67CFB000B75949 /* main.cpp in Sources */,
+				8A3AEBCA1B67D15200B75949 /* kernel_float_3d.cl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +313,7 @@
 				8A3AEBBC1B67CFB000B75949 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
