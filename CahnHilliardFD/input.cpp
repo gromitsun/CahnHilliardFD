@@ -6,6 +6,8 @@
 
 #include "input.hpp"
 
+
+/******************** String processing functions ********************/
 inline std::string trim_comment(const std::string & s, const std::string & delimiter="#")
 {
     if (s.empty())
@@ -52,6 +54,9 @@ inline bool parse_parameter(const std::string & line, std::string & key, std::st
 	}
 }
 
+/*****************************************************************/
+
+/******************** Actual reading function ********************/
 template <typename T>
 void readfile(const std::string & filename, 
 				unsigned int & nx, unsigned int & ny, unsigned int & nz, unsigned int & nt,
@@ -140,6 +145,7 @@ void readfile(const std::string & filename,
 	std::cout << "------- End -------" << std::endl;
 }
 
+/******************** Explicit instantiation ********************/
 template void readfile<double>(const std::string & filename, 
                 unsigned int & nx, unsigned int & ny, unsigned int & nz, unsigned int & nt,
                 double & dx, double & dt,
